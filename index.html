@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SPACE ESCAPE - A Game By Derian Jair</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<script type="text/javascript" src="game.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div id="creditos">
+		<div>
+			Game made by
+			<a href="https://github.com/d3r14n" target="_blank">Derian J. Hndz. L.</a>
+		</div>
+		<div>
+			Sprites made by
+			<a href="https://github.com/d3r14n" target="_blank">Derian J. Hndz. L.</a>
+		</div>
+		<div>
+			Sound Effects from
+			<a href="http://soundbible.com" target="_blank">Soundbible.com</a>
+		</div>
+		<div>
+			Background Music:
+			<a href="https://www.newgrounds.com/audio/listen/409018" target="_blank">"The Pace Escape"</a>
+			By
+			<a href="https://duttonsayshi.newgrounds.com/" target="_blank">DuttonsaysHi</a>
+		</div>
+	</div>
+	<div id="instructions">
+		<button onclick="closeInstructive()">X</button>
+		<p><b><i>Space Escape</i></b> is a game where you need to advance the most you can before getting hit.</p>
+		<img src="sprites/ship.png">This is <b>you</b>, move yourself with the <i>arrow keys</i> or the keys <i>W,S,A</i> and <i>D</i>.<br>
+		<img src="sprites/crosshair.png">This is where you're gonna <b>shot</b>, move the <i>mouse</i> to change position,<br><i>click</i> to shot, you can only shot <u>in front of you</u>.<br>
+		<img src="sprites/enemy.png">These are the <b>enemy ships</b>, destroy as many as you can while avoiding their bullets. Don't crash with them either, that will also destroy your ship.<br>
+		<img src="sprites/explosion.png">When you destroy an enemy ship, they will <b>explode</b>, their explosions <u>doesn't harm you</u>, but your bullets <i>aren't going to pass through</i>.<br>
+	</div>
+	<button id="btnStart" onclick="startGame()">PLAY</button>
+	<button id="btnInstructions" onclick="showInstructive()">INSTRUCTIONS</button>
+</body>
+<script type="text/javascript">
+	function showInstructive()
+	{
+		document.getElementById('instructions').style.display = "block";
+	}
+	function closeInstructive()
+	{
+		document.getElementById('instructions').style.display = "none";
+	}
+</script>
+</html>
